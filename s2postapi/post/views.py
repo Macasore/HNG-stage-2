@@ -21,11 +21,12 @@ class view(APIView):
                 result = serializer.data["x"] * serializer.data["y"]
             else:
                 result = serializer.data["x"] / serializer.data["y"]
-
+                
             #Response format
             return Response(
                 {
+                "status": True,
                 "slackUsername": "maca",
-                "opration_type": serializer.data["operation_type"],
+                "operation_type": serializer.data["operation_type"],
                 "result": result
                 },status=status.HTTP_200_OK)
