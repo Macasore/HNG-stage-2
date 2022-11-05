@@ -1,1 +1,0 @@
-web: gunicorn s2postapi.wsgi --log-file -
