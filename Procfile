@@ -1,1 +1,1 @@
-web: gunicorn --chdir ./s2postapi.wsgi --log-file -
+web: gunicorn --chdir s2postapi/s2postapi.wsgi --log-file -
